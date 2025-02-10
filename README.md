@@ -10,6 +10,8 @@ Requirements:
   * or Docker Desktop `brew install --cask docker`
   * or Docker `brew install docker`
 
+*TODO*: Add info on how to setup application
+
 # Initial setup
 
 The initial setup of this application was done with [Sail](https://laravel.com/docs/11.x/installation#docker-installation-using-sail):
