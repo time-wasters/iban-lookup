@@ -1,6 +1,13 @@
 # iban-lookup
 IBAN powered bank information lookup service
 
+Available commands:
+
+* `iban:validate {iban}`
+  * Validates the given IBAN and prints out information about it.
+* `iban:registry`
+  * **WIP** Updates the IBAN database with registry from SWIFT.
+
 # Development
 
 ## Using Sail on macOS
@@ -11,6 +18,14 @@ Requirements:
   * or Docker `brew install docker`
 
 *TODO*: Add info on how to setup application
+
+[...]
+
+* Download IBAN registry from: https://www.swift.com/standards/data-standards/iban-international-bank-account-number (TXT)
+  * or https://www.swift.com/node/11971
+* Store it as `./app/storage/app/private/utils/IBAN_Registry.txt`
+
+[...]
 
 # Initial setup
 
