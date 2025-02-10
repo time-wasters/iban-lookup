@@ -1,7 +1,7 @@
 <?php
 
 test('validates german ibans', function (string $iban) {
-    $this->artisan('app:validate-iban ' . $iban)->assertExitCode(0);
+    $this->artisan('iban:validate ' . $iban)->assertExitCode(0);
 })->with([
     // https://ibanvalidieren.de/beispiele.html
     // Germany DE
@@ -21,7 +21,7 @@ test('validates german ibans', function (string $iban) {
 ]);
 
 test('validates austrian ibans', function (string $iban) {
-    $this->artisan('app:validate-iban ' . $iban)->assertExitCode(0);
+    $this->artisan('iban:validate ' . $iban)->assertExitCode(0);
 })->with([
     // https://ibanvalidieren.de/beispiele.html
     // Austria AT
@@ -43,7 +43,7 @@ test('validates austrian ibans', function (string $iban) {
 ]);
 
 test('validates swiss ibans', function (string $iban) {
-    $this->artisan('app:validate-iban ' . $iban)->assertExitCode(0);
+    $this->artisan('iban:validate ' . $iban)->assertExitCode(0);
 })->with([
     // https://ibanvalidieren.de/beispiele.html
     // Switzerland CH
@@ -65,7 +65,7 @@ test('validates swiss ibans', function (string $iban) {
 ]);
 
 test('validates liechtenstein ibans', function (string $iban) {
-    $this->artisan('app:validate-iban ' . $iban)->assertExitCode(0);
+    $this->artisan('iban:validate ' . $iban)->assertExitCode(0);
 })->with([
     // https://ibanvalidieren.de/beispiele.html
     // Liechtenstein LI

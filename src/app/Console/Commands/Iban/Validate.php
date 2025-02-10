@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Console\Commands\Iban;
 
 use Illuminate\Console\Command;
 use PHP_IBAN\IBAN;
 
-class ValidateIban extends Command
+class Validate extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'app:validate-iban {iban}';
+    protected $signature = 'iban:validate {iban}';
 
     /**
      * The console command description.
