@@ -11,12 +11,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
-    Route::get('iban', function () {
-        return Inertia::render('iban');
-    })->name('iban');
-    Route::get('bank', function () {
-        return Inertia::render('bank');
-    })->name('bank');
+    Route::get('ibans', function () {
+        return Inertia::render('ibans/index');
+    })->name('ibans.index');
+    Route::get('banks', function () {
+        return Inertia::render('banks/index');
+    })->name('banks.index');
 });
 
 require __DIR__.'/settings.php';

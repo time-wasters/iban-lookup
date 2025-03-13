@@ -15,12 +15,12 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'IBANs',
-        url: '/iban',
+        url: '/ibans',
         icon: CreditCard,
     },
     {
         title: 'Banks',
-        url: '/bank',
+        url: '/banks',
         icon: PiggyBank,
     },
 ];
