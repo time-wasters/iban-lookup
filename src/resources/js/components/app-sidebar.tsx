@@ -4,7 +4,7 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { GitGraph, PersonStanding, LayoutGrid } from 'lucide-react';
+import { LayoutGrid, CreditCard, PiggyBank, GitGraph, PersonStanding } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -12,6 +12,16 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         url: '/dashboard',
         icon: LayoutGrid,
+    },
+    {
+        title: 'IBANs',
+        url: '/iban',
+        icon: CreditCard,
+    },
+    {
+        title: 'Banks',
+        url: '/bank',
+        icon: PiggyBank,
     },
 ];
 
